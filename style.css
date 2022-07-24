@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: aliceblue;
+    color: white;
+    font-family: sans-serif, 'Courier New', Courier, monospace;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.cards {
+    width: 20%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 3%;
+}
+
+img {
+    width: 50px;
+    height: 30px;
+}
+
+.cardTitle {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.text {
+    font-size: small;
+}
+
+.sedan {
+    background-color: #e28625;
+    border-radius: 5% 0 0 5%;
+}
+
+.suv {
+    background-color: #006971;
+}
+
+.luxury {
+    background-color: #004140;
+    border-radius: 0 5% 5% 0;
+}
+
+.btn {
+    border: 3px solid white;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    width: 80%;
+}
+
+@media only screen and (max-width: 800px) {
+    .cards {
+        width: 30%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 3%;
+    }
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        width: 90%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0 10%;
+    }
+
+    .sedan {
+        border-radius: 5% 5% 0 0;
+    }
+
+    .luxury {
+        border-radius: 0 0 5% 5%;
+    }
+    .btn {
+        background-color: white;
+        border-radius: 25px;
+        color: darkgreen;
+        font-weight: bold;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 13px;
+        width: 80%;
+        margin-top: 30%;
+    }
+
+    .sedanBtn {
+        color: #e28625; 
+    }
+
+    .suvBtn {
+        color: #006971;
+    
+    }
+
+    .luxBtn {
+        color: #004140;
+    }
+
+}
